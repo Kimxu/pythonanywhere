@@ -25,8 +25,8 @@ manager.add_command("runserver", Server(use_debugger=True))
 
 @manager.command
 def new_user():
-    u = User(email='kimxu.me@gmail.com', username='kimxu',
-             password='xzg19930723', confirmed=True)
+    u = User(email='xxx', username='kimxu',
+             password='xxx', confirmed=True)
     db.session.add(u)
     db.session.commit()
 
