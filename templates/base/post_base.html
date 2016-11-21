@@ -1,0 +1,69 @@
+{% extends 'base/base.html' %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/post_base.css') }}"
+          xmlns:width="http://www.w3.org/1999/xhtml" xmlns:width="http://www.w3.org/1999/xhtml">
+{% endblock %}
+
+{% block content %}
+    <div class="row post-content  center-block" style="height: 100%">
+        <div class="col-md-3 hidden-print hidden-xs hidden-sm" id="col-slide"
+             style="background-color: #2b2b2b;height: 100%;">
+            <img src="{{ url_for('static', filename='imgs/avatar.jpeg') }}"
+                 class="img-responsive img-circle center-block"
+                 style="margin-top: 60px"
+                 alt="Cinque Terre" width="150" height="150">
+            <div class="panel panel-info" style="border-color: #ffffff;margin-top: 20px">
+                <div class="panel-heading" style="background-color: #2b2b2b">
+                    <h3 class="panel-title  fa fa-user-circle center-block text-center"
+                        style="color: #ffffff;font-size: 18px;width: 100%">
+                        Kimxu
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <address style="color: #2b2b2b">
+                        <abbr title="Info">Info:</abbr>
+                        <strong style="font-size: 16px">心比天大，梦比海宽"</strong><br/><br/>
+                        <abbr title="Address">Local:</abbr>
+                        深圳</br></br>
+                        <abbr title="Phone">WeiChat:</abbr>
+                        xzg-19930723
+                    </address>
+                </div>
+                <div class="panel-footer">
+                    <div class="row " style=" margin-left: 20px;margin-right: 20px">
+                        <div class=" col-md-3" style="padding: 5px;">
+                            <a class="fa fa-google  fa-2x" href="mailto:kimxu.me@gmail.com" target="_blank"></a>
+                        </div>
+                        <div class=" col-md-3" style="padding: 5px;">
+                            <a class="fa fa-weibo fa-2x" href="http://weibo.com/kkimxu" target="_blank"></a>
+                        </div>
+                        <div class=" col-md-3" style="padding: 5px;">
+                            <a class="fa fa-wechat fa-2x"
+                               data-toggle="tooltip"
+                               title="<img  style='width: 120px; height: 120px;'
+                     src='{{ url_for('static', filename='imgs/weichat.jpeg') }}'/>"></a>
+                        </div>
+                        <div class=" col-md-3" style="padding: 5px;">
+                            <a class="fa fa-github fa-2x" href="https://github.com/Kimxu" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-md-9" style="background-color: #dddddd">
+            {% block post_content %}
+
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block scripts %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='js/post/post_base.js') }}"></script>
+{% endblock %}

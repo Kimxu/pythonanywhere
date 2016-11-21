@@ -1,0 +1,17 @@
+{% extends "base/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Kimxu's - Login{% endblock %}
+
+{% block content %}
+    <div class="col-md-4 col-md-push-4 card" style="margin-top: 150px;background-color: #dddddd;padding-bottom: 20px;border-radius: 10px">
+        <h1 class="text-center">登录</h1>
+        {{ wtf.quick_form(form) }}
+    </div>
+{% endblock %}
+
+{% block styles %}
+    {{ super() }}
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+{%- endblock styles %}

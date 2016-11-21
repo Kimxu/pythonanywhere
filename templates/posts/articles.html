@@ -1,0 +1,17 @@
+{% extends 'base/post_base.html' %}
+
+{% block post_content %}
+    {% raw %}
+    <div class="container-fluid" ng-controller="PostController" style="padding-bottom: 40px;padding-top: 10px"
+         data-ng-bind-html="articles">
+
+    </div>
+    {% endraw %}
+{% endblock %}
+
+
+{% block scripts %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='js/post/app.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/post/articles.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base/base.html" %}
+
+{% block title %}Kimxu's - Login{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fileinput/css/fileinput.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/upload.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="container center-block">
+        <div class="row" style="margin-top: 100px">
+            <div class="col-md-6 col-md-push-3">
+                <form enctype="multipart/form-data" name="MD" method="post">
+                    <input id="file-upload" class="file" type="file" multiple data-min-file-count="1">
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='fileinput//js/fileinput.js') }}"></script>
+    <script src="{{ url_for('static', filename='fileinput/js/locales/zh.js') }}"></script>
+    <script src="{{ url_for('static', filename='fileinput/js/locales/es.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/post/upload.js') }}"></script>
+{% endblock %}

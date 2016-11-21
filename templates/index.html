@@ -1,0 +1,24 @@
+{% extends 'base/base.html' %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+{% block content %}
+    <div class="container-fluid index">
+        <center style="padding-top: 100px">
+            <img id="index_avatar" src="{{ url_for('static', filename='imgs/avatar.jpeg') }}"
+                 class="img-circle img-responsive" style="width: 120px;height: 120px;">
+            <p style="margin-top: 10px;color: #f0f0f0;font-size: 24px;vertical-align:bottom;">Kimxu
+                <small style="font-size: 16px;">，一个喜欢搞艺术的程序猿</small>
+            </p>
+            <button type="button" class="btn btn-link"
+                    style="margin-top: 10px;color: #dddddd;font-size: 18px;vertical-align:bottom;">不积跬步无以至千里，不积小流无以成江海
+            </button>
+        </center>
+    </div>
+{% endblock %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}

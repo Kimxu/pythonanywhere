@@ -1,0 +1,47 @@
+/* hovertreetags */
+#hovertreetags {
+    height: 400px;
+    position: relative;
+    font-size: 12px;
+    color: #333;
+    margin: 20px auto 0;
+    text-align: center;
+    border: 1px solid #2b2b2b;
+    border-radius: 5%;
+}
+
+#hovertreetags a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #333;
+    font-family: Arial;
+    text-decoration: none;
+    margin: 0 10px 15px 0;
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+    padding: 1px 5px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+#hovertreetags a.tagc0 {
+    background: #666;
+    color: #fff;
+}
+
+#hovertreetags a.tagc1 {
+    background: #F16E50;
+    color: #fff;
+}
+
+#hovertreetags a.tagc2 {
+    background: #006633;
+    color: #fff;
+}
+
+#hovertreetags a:hover {
+    color: #fff;
+    background: #0099ff;
+}

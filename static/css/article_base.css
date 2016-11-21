@@ -1,0 +1,64 @@
+.nav li a:hover,
+.nav li a:focus {
+    background: #707a7c;
+    color: #ffffff;
+}
+
+.nav .active a {
+    font-weight: bold;
+    background: #a7a7a7;
+    color: #ffffff;
+}
+
+.nav a {
+    color: #a7a7a7;
+}
+
+.nav .nav {
+    display: none;
+}
+
+.nav .active .nav {
+    display: block;
+}
+
+.nav .nav a {
+    font-weight: normal;
+    font-size: .85em;
+    color: #ffffff;
+}
+
+.nav .nav .active a,
+.nav .nav .active:hover a,
+.nav .nav .active:focus a {
+    font-weight: bold;
+    font-size: .90em;
+    padding-left: 30px;
+    border-left: 5px solid #ffffff;
+    color: #ffffff;
+}
+
+.affix-top {
+    top: 150px;
+}
+
+.affix {
+    top: 20px;
+    width: 250px;
+}
+
+.affix-bottom {
+    bottom: 40px;
+}
+
+.tag-index, .tag-index:link, .tag-index:visited {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.tag-index:hover, .tag-index:active {
+    font-size: 20px;
+    color: #707a7c;
+    text-decoration: none;
+}

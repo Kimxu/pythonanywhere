@@ -1,0 +1,60 @@
+{% extends 'base/post_base.html' %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/article_base.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/pygments.css') }}">
+{% endblock %}
+{% block scripts %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='js/post/article_base.js') }}"></script>
+{% endblock %}
+{% block body_attribs %}
+    {{ super() }}
+    data-spy="scroll"
+    data-target=".scrollspy"
+{% endblock body_attribs %}
+{% block content %}
+    <div class="row post-content" style="height: 100%">
+        <div class="col-md-3 hidden-print hidden-xs hidden-sm" id="col-slide"
+             style="background-color: #2b2b2b;height: 100%;">
+            <img src="{{ url_for('static', filename='imgs/avatar.jpeg') }}"
+                 class="img-responsive img-circle center-block"
+                 style="margin-top: 60px"
+                 alt="Cinque Terre" width="150" height="150">
+            <div class="sidebar-module" style="color: #ffffff;padding-left: 10px">
+                <div>
+                    {{ title_html }}
+                    <div class="sidebar-module-inset">
+                        <h5 class="sidebar-title fa fa-angle-down" style="color: #dddddd;font-size: 16px"> 摘要</h5>
+
+                        <p>{{ summary }}</p>
+                    </div>
+                    <hr class="side-hr">
+                    <div>
+                        <h5 class="sidebar-title fa fa-user-o" style="color: #dddddd;font-size: 16px">
+                            作者</h5>{{ authors }}
+                    </div>
+                    <hr class="side-hr">
+                    <div>
+                        <h5 class="sidebar-title fa fa-tags" style="color: #dddddd;font-size: 16px"> 标签</h5>{{ tags }}
+                    </div>
+                    <hr class="side-hr">
+                </div>
+                <div data-spy="affix" id="directory">
+                    <h5>目录</h5>
+                    <div class="toc scrollspy">
+                        {{ toc }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9" style="background-color: #dddddd" style="padding-bottom: 60px;margin-left: 5px;margin-right: 5px">
+            {{ blog_content }}
+            <!-- UY BEGIN -->
+            <div id="uyan_frame"></div>
+            <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2119453"></script>
+            <!-- UY END -->
+        </div>
+    </div>
+{% endblock %}
+

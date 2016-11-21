@@ -1,0 +1,35 @@
+/*@media screen and (max-width: 767px) {*/
+/*#col-slide {*/
+/*display: none;*/
+/*background-color:lightblue;*/
+/*}*/
+/*}*/
+
+.post-content {
+    background-color: #dddddd;
+}
+
+.fa {
+    color: #000000;
+    text-decoration: none;
+}
+
+.fa:hover {
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+.fa:visited {
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+.fa:active {
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+.fa:link {
+    color: #000000;
+    text-decoration: none;
+}

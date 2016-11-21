@@ -1,0 +1,33 @@
+{% extends 'base/post_base.html' %}
+
+
+{% block html_attribs %}
+    {{ super() }}
+{% endblock html_attribs %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/articles_by_category.css') }}">
+{% endblock %}
+
+{% block post_content %}
+    <div ng-controller="PostController">
+        {% raw %}
+        <div class="container-fluid" style="padding-bottom: 50px;padding-top: 10px"
+             data-ng-bind-html="articles">
+
+        </div>
+        {% endraw %}
+        <ul class="pager" ng-show="hasPager" style="padding-bottom: 50px;padding-left: 15px; padding-right: 15px; ">
+            <li class="previous" ng-if="!noPre" ng-click="previousPager()"><a href="#">&larr; 前一页</a></li>
+            <li class="next"><a href="#" ng-click="nextPager()">后一页 &rarr;</a></li>
+        </ul>
+    </div>
+    <span id="category" class="h1 text-info" style="display: none">{{ category }}</span>
+{% endblock %}
+
+
+{% block scripts %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='js/post/app.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/post/articles_by_category.js') }}"></script>
+{% endblock %}
