@@ -6,7 +6,6 @@ from flask import current_app, request
 from flask_login import UserMixin, AnonymousUserMixin
 from __init__ import db, login_manager
 
-
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True)

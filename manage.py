@@ -32,5 +32,4 @@ def new_user():
 
 
 if __name__ == '__main__':
-
     manager.run()
