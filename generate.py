@@ -231,7 +231,12 @@ def render_title_html(title):
     return title_html
 
 
-def render(md_file):
+"""
+传入文件名字
+"""
+
+
+def render(md_file, site_id):
     """渲染html页面
     :param md_file:
     :return:
@@ -253,11 +258,13 @@ def render(md_file):
         meta = md.Meta if hasattr(md, "Meta") else {}
         toc = md.toc if hasattr(md, "toc") else ""
         create_index(md_file, meta)
-
+        article_url = '/posts/' + site_id
         template = env.get_template("posts/article_base.html")
         text = template.render(
             blog_content=html,
             static_root=STATIC_ROOT,
+            site_id=site_id,
+            article_url=article_url,
             title=ARTICLE_INDEX[_current_file_index].get("title"),
             title_html=render_title_html(ARTICLE_INDEX[_current_file_index].get("title")),
             summary=ARTICLE_INDEX[_current_file_index].get("summary", ""),
@@ -269,12 +276,13 @@ def render(md_file):
     return text
 
 
-def gen(md_file_path):
+def gen(md_file_path, site_id):
     """将markdown生成html文件
+    :param site_id:
     :param md_file_path:
     """
     out_path = get_out_dir(md_file_path)
-    html = render(md_file_path)
+    html = render(md_file_path, site_id)
     save_html(out_path, html)
 
 
@@ -288,7 +296,7 @@ def scan_md():
             codecs.decode(file_base_name.encode('utf-8'), "gb2312")
         )
         _pinyin_names.add(_current_file_index)
-        gen(f)
+        gen(f, _current_file_index)
 
 
 def load_md_files(folder):

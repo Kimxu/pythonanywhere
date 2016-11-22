@@ -2,15 +2,16 @@
 #hovertreetags {
     height: 400px;
     position: relative;
-    font-size: 12px;
+    font-size: 14px;
     color: #333;
     margin: 20px auto 0;
     text-align: center;
     border: 1px solid #2b2b2b;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 #hovertreetags a {
+    padding: 4px;
     position: absolute;
     top: 0;
     left: 0;
@@ -20,10 +21,10 @@
     margin: 0 10px 15px 0;
     line-height: 18px;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     padding: 1px 5px;
     display: inline-block;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 #hovertreetags a.tagc0 {

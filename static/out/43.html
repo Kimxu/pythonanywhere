@@ -12,8 +12,8 @@
     <!-- Bootstrap -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/static/imgs/favorite.png" type="image/x-icon">
+    <link rel="icon" href="/static/imgs/favorite.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/static/css/base.css">
     <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-social.css">
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -42,7 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">KimXu's</a>
+                <a class="navbar-brand" href="/">主页</a>
             </div>
             <div class="collapse navbar-collapse" id="example-navbar-collapse">
                 <p id="formServerCategory" style="display: none"></p>
@@ -82,10 +82,12 @@
                  alt="Cinque Terre" width="150" height="150">
             <div class="sidebar-module" style="color: #ffffff;padding-left: 10px">
                 <div>
-                    <div class='sidebar-module-inset'><h3 class='sidebar-title fa fa-angle-down' style='color:#dddddd;font-size: 16px'>    标题</h3><p>日常问题解决</p></div>
+                    <div class='sidebar-module-inset'><h3 class='sidebar-title fa fa-angle-down'
+                                                          style='color:#dddddd;font-size: 16px'> 标题</h3>
+                        <p><div class='sidebar-module-inset'><h3 class='sidebar-title fa fa-angle-down' style='color:#dddddd;font-size: 16px'>    标题</h3><p>日常问题解决</p></div></p></div>
+
                     <div class="sidebar-module-inset">
                         <h5 class="sidebar-title fa fa-angle-down" style="color: #dddddd;font-size: 16px"> 摘要</h5>
-
                         <p>介绍本博客的基本功能</p>
                     </div>
                     <hr class="side-hr">
@@ -112,7 +114,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-9" style="background-color: #dddddd" style="padding-bottom: 60px;margin-left: 5px;margin-right: 5px">
+        <div class="col-md-9" style="background-color: #dddddd"
+             style="padding-bottom: 60px;margin-left: 5px;margin-right: 5px">
             <h3 id="_1">前言：开发中遇见的一些问题，都会集中在这个帖子中。</h3>
 <ol>
 <li>设置Dialog的位置</li>
@@ -163,10 +166,25 @@
 <p>```</p>
 <p>​</p>
 <p>​</p>
-            <!-- UY BEGIN -->
-            <div id="uyan_frame"></div>
-            <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2119453"></script>
-            <!-- UY END -->
+            <!-- 多说评论框 start -->
+            <div class="ds-thread" data-thread-key="43" data-title="日常问题解决"
+                 data-url="/posts/43" style="margin-bottom: 50px"></div>
+            <!-- 多说评论框 end -->
+            <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+            <script type="text/javascript">
+                var duoshuoQuery = {short_name: "kimxuherokuapp"};
+                (function () {
+                    var ds = document.createElement('script');
+                    ds.type = 'text/javascript';
+                    ds.async = true;
+                    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                    ds.charset = 'UTF-8';
+                    (document.getElementsByTagName('head')[0]
+                    || document.getElementsByTagName('body')[0]).appendChild(ds);
+                })();
+
+            </script>
+            <!-- 多说公共JS代码 end -->
         </div>
     </div>
 
