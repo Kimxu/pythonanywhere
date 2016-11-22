@@ -1,3 +1,5 @@
+# -*- coding:utf-8 -*-
+
 import os
 
 from flask import render_template, jsonify

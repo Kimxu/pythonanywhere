@@ -1,3 +1,5 @@
+# -*- coding:utf-8 -*-
+
 from datetime import datetime
 import hashlib
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -5,6 +7,7 @@ from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from flask import current_app, request
 from flask_login import UserMixin, AnonymousUserMixin
 from __init__ import db, login_manager
+
 
 class User(UserMixin, db.Model):
     __tablename__ = 'users'

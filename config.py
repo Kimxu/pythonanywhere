@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 # 存储配置
 
 import os

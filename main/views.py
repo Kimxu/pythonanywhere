@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 from flask import render_template
 from flask import request, jsonify
 from flask import url_for
