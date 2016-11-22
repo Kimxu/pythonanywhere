@@ -38,3 +38,5 @@ Werkzeug==0.10.4
 WTForms==1.0.5
 gunicorn==18.0
 psycopg2==2.5.1
+Flask-SSLify==0.1.5
+
