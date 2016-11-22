@@ -26,10 +26,22 @@ manager.add_command("runserver", Server(use_debugger=True))
 
 @manager.command
 def new_user():
-    u = User(email='xxx', username='kimxu',
-             password='xxx', confirmed=True)
+    u = User(email='kimxu_me@163.com', username='kimxu',
+             password='xzg-19930723', confirmed=True)
     db.session.add(u)
     db.session.commit()
+
+
+@manager.command
+def deploy():
+    """Run deployment tasks."""
+    from flask_migrate import upgrade
+    # migrate database to latest revision
+    upgrade()
+
+    # create self-follows for all users
+    User.add_self_follows()
+
 
 
 if __name__ == '__main__':
