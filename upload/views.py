@@ -8,7 +8,6 @@ from flask import url_for
 from flask.ext.login import login_required
 from werkzeug.utils import secure_filename
 
-from generate import INPUT_CONTENT, generate
 from utils.helper import IndexData
 from . import upload
 
@@ -22,6 +21,7 @@ def upload_article():
 @upload.route('/file', methods=["POST"])
 @login_required
 def upload():
+    from generate import INPUT_CONTENT, generate
     """上传文件
       1. 保存至本地
       2. md转换为html
