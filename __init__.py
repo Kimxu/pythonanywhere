@@ -6,6 +6,7 @@ from flask.ext.moment import Moment
 from flask.ext.sqlalchemy import SQLAlchemy
 from config import config
 import sys
+
 bootstrap = Bootstrap()
 moment = Moment()
 db = SQLAlchemy()
@@ -23,6 +24,10 @@ def create_app(config_name):
     login_manager.init_app(app)
     moment.init_app(app)
     db.init_app(app)
+
+    if not app.debug and not app.testing and not app.config['SSL_DISABLE']:
+        from flask.ext.sslify import SSLify
+        sslify = SSLify(app)
 
     # 附加路由和自定义的错误页面 return app
     from post import post as post_blueprint
