@@ -22,6 +22,12 @@ def user():
     return render_template('user.html')
 
 
+@main.route('/about/')
+def about():
+    return render_template('about.html')
+
+
+
 
 @main.route("/categories/<category>/")
 def page_article_by_category(category):

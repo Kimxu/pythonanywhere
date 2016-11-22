@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html
+
+        ng-app="App"
+>
+<head>
+
+
+    <title>Kimxu's blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"
+          media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="shortcut icon" href="/static/imgs/favorite.png" type="image/x-icon">
+    <link rel="icon" href="/static/imgs/favorite.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/static/css/post_base.css"
+          xmlns:width="http://www.w3.org/1999/xhtml" xmlns:width="http://www.w3.org/1999/xhtml">
+
+    <link rel="stylesheet" type="text/css" href="/static/css/article_base.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/pygments.css">
+
+</head>
+<body
+        data-spy="scroll"
+        data-target=".scrollspy"
+>
+
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-bottom" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">主页</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <p id="formServerCategory" style="display: none"></p>
+            <ul class="nav navbar-nav" id="navbar">
+                <li><a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></li>
+                <li><a href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></li>
+                <li><a href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a></li>
+                <li><a href="/tags">标签云</a></li>
+                <li><a href="/categories/%E5%85%B3%E4%BA%8E/">关于</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="row post-content" style="height: 100%">
+    <div class="col-md-3 hidden-print hidden-xs hidden-sm" id="col-slide"
+         style="background-color: #2b2b2b;height: 100%;">
+        <img src="/static/imgs/avatar.jpeg"
+             class="img-responsive img-circle center-block"
+             style="margin-top: 60px"
+             alt="Cinque Terre" width="150" height="150">
+        <div class="sidebar-module" style="color: #ffffff;padding-left: 10px">
+            <div>
+                <div class='sidebar-module-inset'><h3 class='sidebar-title fa fa-angle-down'
+                                                      style='color:#dddddd;font-size: 16px'> 标题</h3>
+                    <p>关于本博客</p></div>
+                <div class="sidebar-module-inset">
+                    <h5 class="sidebar-title fa fa-angle-down" style="color: #dddddd;font-size: 16px"> 摘要</h5>
+
+                    <p>博客介绍</p>
+                </div>
+                <hr class="side-hr">
+                <div>
+                    <h5 class="sidebar-title fa fa-user-o" style="color: #dddddd;font-size: 16px">
+                        作者</h5><a href='/about/user/' class='tag-index'> Kimxu</a>
+                </div>
+                <hr class="side-hr">
+                <div>
+                    <h5 class="sidebar-title fa fa-tags" style="color: #dddddd;font-size: 16px"> 标签</h5> <a
+                        href='/tags/关于/' class='tag-index'>关于</a>
+                </div>
+                <hr class="side-hr">
+            </div>
+            <div data-spy="affix" id="directory">
+                <h5>目录</h5>
+                <div class="toc scrollspy">
+                    <div class="toc">
+                        <ul>
+                            <li><a href="#_1">关于博客</a></li>
+                            <li><a href="#_2">博客记录内容</a></li>
+                            <li><a href="#kimxu">关于本人（Kimxu）</a></li>
+                            <li><a href="#chenyan">关于ChenYan</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-9" style="background-color: #dddddd"
+         style="padding-bottom: 60px;margin-left: 5px;margin-right: 5px">
+        <h1 id="_1">关于博客</h1>
+        <p>本博客是本人（Kimxu）开发的一个基于Markdown的博客系统，后端采用Python的Flask系统，
+            前端采用Bootstrap、AngularJs(以后会用采用Cordova技术，开发IOS、Android版本)。
+            博客会开源出来，也算是为开源世界贡献出一点力。</p>
+        <h1 id="_2">博客记录内容</h1>
+        <p>写博客的目的不为别的，就是想记录下自己的技术成长（这是为了提高自身价值）与生活点滴（这是为了提升自己内在素养）
+            ，等老了以后可以回首匆匆岁月。每个人心中都有一座城，希望我们都能靠接那座天空之城。</p>
+        <h1 id="kimxu">关于本人（Kimxu）</h1>
+        <p>本人生于癸酉年，天干为癸，地支为酉，癸五行属水，酉为生肖鸡。浪漫而不轻狂、诗意而不失意、
+            悲情而不悲伤。</p>
+        <p>会点前端、会点后端、向往自由、安卓为主、Python为辅，努力能成为一位自由职业者，那样真是极好的。</p>
+        <h1 id="chenyan">关于ChenYan</h1>
+        <p>老陈是我人生路上的伴侣，跟我一起哭过笑过，现在的目标就是未来的某一天可以和老陈一起去世界
+            走走看看，拿着单反对着她和景色，咔嚓一按，记录下那美好的一瞬间。生活那个栏目是给老陈准备的
+            傻乎乎的女子，总是让人哭笑不得。</p>
+        <p>Hi，我是ChenYan，声控一枚，梦想是跟我家老徐周游世界。小女子不才，琴棋书画，样样不会
+            写作业也算是我的一大爱好，总喜欢在夜深人静的的时候把思想中的那一闪光抽出来，用文字记录下那一刻。
+            <img alt="普吉岛" class="img-responsive" src="http://7xotfz.com1.z0.glb.clouddn.com/public/16-11-22/27561392.jpg"/></p>
+        <!-- 多说评论框 start -->
+        <div class="ds-thread" data-thread-key="about" data-title="关于本博客"
+             data-url="/posts/about" style="margin-bottom: 50px"></div>
+        <!-- 多说评论框 end -->
+        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+        <script type="text/javascript">
+            var duoshuoQuery = {short_name: "kimxuherokuapp"};
+            (function () {
+                var ds = document.createElement('script');
+                ds.type = 'text/javascript';
+                ds.async = true;
+                ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                ds.charset = 'UTF-8';
+                (document.getElementsByTagName('head')[0]
+                || document.getElementsByTagName('body')[0]).appendChild(ds);
+            })();
+
+        </script>
+        <!-- 多说公共JS代码 end -->
+    </div>
+</div>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="/static/angular/angular.min.js"></script>
+<script src="/static/js/base.js"></script>
+
+<script src="/static/js/post/post_base.js"></script>
+
+<script src="/static/js/post/article_base.js"></script>
+
+</body>
+</html>
