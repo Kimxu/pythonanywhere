@@ -41,3 +41,25 @@ def upload():
         return jsonify({'status': '上传失败'})
 
     return jsonify({'status': '上传成功'})
+
+
+@upload.route('/update')
+@login_required
+def upload():
+    from generate import generate
+    """
+    更新文章索引
+      """
+    try:
+        generate()
+        IndexData.reload_index_data()
+    except Exception as error:
+        print(error)
+        return jsonify({'status': '更新失败'})
+
+    return jsonify({'status': '更新成功'})
+
+
+
+
+

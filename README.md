@@ -44,6 +44,7 @@ After the upload,the system will change the md file to Html file,that can auto s
 
 
 
+if you want to learn more info [Click this](https://kimxu.herokuapp.com/posts/the_blog_guide/)
 
 
 

@@ -108,7 +108,6 @@ angular.module('App', [])
             for (var key in data) {
 
                 if (data[key]["title"].length > 0) {
-
                     articleHtml += ARTICLE_ITEM_TEMPLATE.replace(/\{articleId}/g, data[key]["url_title"])
                         .replace(/\{title}/g, data[key]["title"])
                         .replace(/\{modify_time}/g, data[key]["publish_date"])
