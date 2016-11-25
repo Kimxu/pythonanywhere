@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f9c1c82-3d01-48ad-b0c6-d44ece27a754" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/post/articles_by_category.js" afterPath="$PROJECT_DIR$/static/js/post/articles_by_category.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/post/articles_by_tags.js" afterPath="$PROJECT_DIR$/static/js/post/articles_by_tags.js" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,7 +19,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/blog$test.coverage" NAME="test Coverage Results" MODIFIED="1480054897320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/blog$generate.coverage" NAME="generate Coverage Results" MODIFIED="1479460603075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/blog$blog.coverage" NAME="blog Coverage Results" MODIFIED="1480062177665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/blog$blog.coverage" NAME="blog Coverage Results" MODIFIED="1480080087150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -39,68 +41,18 @@
       <file leaf-file-name="articles_by_category.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/posts/articles_by_category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
+            <state relative-caret-position="393">
               <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-              <folding>
-                <element signature="e#628#698#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="articles_by_tags.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/posts/articles_by_tags.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generate.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-860">
-              <caret line="55" column="69" selection-start-line="55" selection-start-column="69" selection-end-line="55" selection-end-column="69" />
-              <folding>
-                <element signature="e#63#76#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="4.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/in/4.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="80">
-                <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="articles_by_category.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/articles_by_category.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+            <state relative-caret-position="-87">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,26 +61,70 @@
       <file leaf-file-name="articles_by_category.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/post/articles_by_category.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="26" column="39" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="39" />
+            <state relative-caret-position="345">
+              <caret line="111" column="75" selection-start-line="111" selection-start-column="63" selection-end-line="111" selection-end-column="75" />
               <folding>
-                <marker date="1480061992000" expanded="true" signature="1586:1611" ph="..." />
-                <marker date="1480061992000" expanded="true" signature="1586:1624" ph="..." />
-                <marker date="1480061992000" expanded="true" signature="1586:1643" ph="..." />
-                <marker date="1480061992000" expanded="true" signature="1694:1719" ph="..." />
-                <marker date="1480061992000" expanded="true" signature="1694:1732" ph="..." />
-                <marker date="1480061992000" expanded="true" signature="1911:1923" ph="..." />
-                <marker date="1480061992000" expanded="true" signature="1911:1924" ph="..." />
-                <marker date="1480061992000" expanded="true" signature="1936:1966" ph="..." />
-                <marker date="1480061992000" expanded="true" signature="2040:2053" ph="..." />
-                <marker date="1480061992000" expanded="true" signature="2121:2135" ph="..." />
-                <marker date="1480061992000" expanded="true" signature="2121:2146" ph="..." />
-                <marker date="1480061992000" expanded="true" signature="2246:2260" ph="..." />
-                <marker date="1480061992000" expanded="true" signature="2246:2271" ph="..." />
-                <marker date="1480061992000" expanded="true" signature="2362:2374" ph="..." />
-                <marker date="1480061992000" expanded="true" signature="2403:2417" ph="..." />
-                <marker date="1480061992000" expanded="true" signature="2607:2664" ph="..." />
-                <marker date="1480061992000" expanded="true" signature="2715:2753" ph="..." />
+                <marker date="1480081164000" expanded="true" signature="1586:1611" ph="..." />
+                <marker date="1480081164000" expanded="true" signature="1586:1624" ph="..." />
+                <marker date="1480081164000" expanded="true" signature="1586:1643" ph="..." />
+                <marker date="1480081164000" expanded="true" signature="1694:1719" ph="..." />
+                <marker date="1480081164000" expanded="true" signature="1694:1732" ph="..." />
+                <marker date="1480081164000" expanded="true" signature="1911:1923" ph="..." />
+                <marker date="1480081164000" expanded="true" signature="1911:1924" ph="..." />
+                <marker date="1480081164000" expanded="true" signature="1936:1966" ph="..." />
+                <marker date="1480081164000" expanded="true" signature="2040:2053" ph="..." />
+                <marker date="1480081164000" expanded="true" signature="2121:2135" ph="..." />
+                <marker date="1480081164000" expanded="true" signature="2121:2146" ph="..." />
+                <marker date="1480081164000" expanded="true" signature="2246:2260" ph="..." />
+                <marker date="1480081164000" expanded="true" signature="2246:2271" ph="..." />
+                <marker date="1480081164000" expanded="true" signature="2362:2374" ph="..." />
+                <marker date="1480081164000" expanded="true" signature="2403:2417" ph="..." />
+                <marker date="1480081164000" expanded="true" signature="2607:2664" ph="..." />
+                <marker date="1480081164000" expanded="true" signature="2715:2753" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="articles_by_tags.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/js/post/articles_by_tags.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+              <folding>
+                <marker date="1480081309000" expanded="true" signature="1567:1624" ph="..." />
+                <marker date="1480081309000" expanded="true" signature="1675:1713" ph="..." />
+                <marker date="1480081309000" expanded="true" signature="1892:1905" ph="..." />
+                <marker date="1480081309000" expanded="true" signature="1917:1947" ph="..." />
+                <marker date="1480081309000" expanded="true" signature="2021:2034" ph="..." />
+                <marker date="1480081309000" expanded="true" signature="2102:2116" ph="..." />
+                <marker date="1480081309000" expanded="true" signature="2227:2241" ph="..." />
+                <marker date="1480081309000" expanded="true" signature="2343:2355" ph="..." />
+                <marker date="1480081309000" expanded="true" signature="2384:2398" ph="..." />
+                <marker date="1480081309000" expanded="true" signature="2588:2645" ph="..." />
+                <marker date="1480081309000" expanded="true" signature="2696:2734" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="5.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/out/5.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generate.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="296" column="9" selection-start-line="296" selection-start-column="9" selection-end-line="296" selection-end-column="9" />
+              <folding>
+                <element signature="e#63#76#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,13 +149,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/css/article_base.css" />
         <option value="$PROJECT_DIR$/static/js/base.js" />
         <option value="$PROJECT_DIR$/utils/helper.py" />
         <option value="$PROJECT_DIR$/templates/tags.html" />
         <option value="$PROJECT_DIR$/templates/posts/articles_by_tags.html" />
         <option value="$PROJECT_DIR$/static/js/tags.js" />
-        <option value="$PROJECT_DIR$/static/js/post/articles_by_tags.js" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/runtime.txt" />
         <option value="$PROJECT_DIR$/models.py" />
@@ -198,12 +192,14 @@
         <option value="$PROJECT_DIR$/upload/views.py" />
         <option value="$PROJECT_DIR$/in/android_animation.md" />
         <option value="$PROJECT_DIR$/generate.py" />
-        <option value="$PROJECT_DIR$/static/js/post/articles_by_category.js" />
         <option value="$PROJECT_DIR$/static/css/articles_by_category.css" />
         <option value="$PROJECT_DIR$/templates/posts/articles_by_category.html" />
         <option value="$PROJECT_DIR$/in/4.md" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/static/out/5.html" />
+        <option value="$PROJECT_DIR$/static/js/post/articles_by_category.js" />
+        <option value="$PROJECT_DIR$/static/js/post/articles_by_tags.js" />
       </list>
     </option>
   </component>
@@ -242,7 +238,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -271,6 +266,114 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="post" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -278,6 +381,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -582,16 +686,15 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18012924" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2819063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.4928717" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33835617" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33835617" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -601,6 +704,7 @@
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3328767" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5071283" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -671,19 +775,16 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/static/js/post/articles_by_category.js</url>
           <line>52</line>
-          <properties />
           <option name="timeStamp" value="112" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/static/js/post/articles_by_category.js</url>
           <line>51</line>
-          <properties />
           <option name="timeStamp" value="113" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/static/js/post/articles_by_category.js</url>
           <line>50</line>
-          <properties />
           <option name="timeStamp" value="114" />
         </line-breakpoint>
       </breakpoints>
@@ -704,20 +805,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../venv/lib/python3.5/site-packages/flask_migrate/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="94" column="4" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/post/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../venv/lib/python3.5/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -796,13 +883,6 @@
     <entry file="file://$PROJECT_DIR$/in/1.md" />
     <entry file="file://$PROJECT_DIR$/in/about.md" />
     <entry file="file://$PROJECT_DIR$/static/out/1.html" />
-    <entry file="file://$PROJECT_DIR$/templates/base/post_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/out/about.html" />
     <entry file="file://$PROJECT_DIR$/templates/user.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -841,13 +921,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.ignore" />
-    <entry file="file://$PROJECT_DIR$/local.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
@@ -861,20 +934,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/in/kimxu1122.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="248">
-            <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/in/kimxu1122.md" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/ntpath.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -883,19 +943,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
           <caret line="38" column="8" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -903,7 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,36 +962,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/in/use-http-1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="80">
-            <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/in/use-http-1.md" />
+    <entry file="file://$PROJECT_DIR$/in/android_animation.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/in/android_animation.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="100">
             <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/post/views.py">
@@ -955,7 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
           <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -963,29 +998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/post/articles_by_tags.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1479701445000" expanded="true" signature="1567:1624" ph="..." />
-            <marker date="1479701445000" expanded="true" signature="1675:1713" ph="..." />
-            <marker date="1479701445000" expanded="true" signature="1892:1905" ph="..." />
-            <marker date="1479701445000" expanded="true" signature="1917:1947" ph="..." />
-            <marker date="1479701445000" expanded="true" signature="2021:2034" ph="..." />
-            <marker date="1479701445000" expanded="true" signature="2102:2116" ph="..." />
-            <marker date="1479701445000" expanded="true" signature="2227:2241" ph="..." />
-            <marker date="1479701445000" expanded="true" signature="2343:2355" ph="..." />
-            <marker date="1479701445000" expanded="true" signature="2384:2398" ph="..." />
-            <marker date="1479701445000" expanded="true" signature="2588:2645" ph="..." />
-            <marker date="1479701445000" expanded="true" signature="2696:2734" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -993,7 +1005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,33 +1012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-460">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/post/articles_by_category.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="39" />
-          <folding>
-            <marker date="1480061992000" expanded="true" signature="1586:1611" ph="..." />
-            <marker date="1480061992000" expanded="true" signature="1586:1624" ph="..." />
-            <marker date="1480061992000" expanded="true" signature="1586:1643" ph="..." />
-            <marker date="1480061992000" expanded="true" signature="1694:1719" ph="..." />
-            <marker date="1480061992000" expanded="true" signature="1694:1732" ph="..." />
-            <marker date="1480061992000" expanded="true" signature="1911:1923" ph="..." />
-            <marker date="1480061992000" expanded="true" signature="1911:1924" ph="..." />
-            <marker date="1480061992000" expanded="true" signature="1936:1966" ph="..." />
-            <marker date="1480061992000" expanded="true" signature="2040:2053" ph="..." />
-            <marker date="1480061992000" expanded="true" signature="2121:2135" ph="..." />
-            <marker date="1480061992000" expanded="true" signature="2121:2146" ph="..." />
-            <marker date="1480061992000" expanded="true" signature="2246:2260" ph="..." />
-            <marker date="1480061992000" expanded="true" signature="2246:2271" ph="..." />
-            <marker date="1480061992000" expanded="true" signature="2362:2374" ph="..." />
-            <marker date="1480061992000" expanded="true" signature="2403:2417" ph="..." />
-            <marker date="1480061992000" expanded="true" signature="2607:2664" ph="..." />
-            <marker date="1480061992000" expanded="true" signature="2715:2753" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1040,52 +1024,128 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/in/4.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="80">
+          <first_editor relative-caret-position="860">
             <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/posts/articles_by_category.html">
+    <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="e#628#698#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="304">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        <state relative-caret-position="40">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/post_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/posts/articles_by_tags.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-87">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/posts/articles_by_category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/out/5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-860">
-          <caret line="55" column="69" selection-start-line="55" selection-start-column="69" selection-end-line="55" selection-end-column="69" />
+        <state relative-caret-position="305">
+          <caret line="296" column="9" selection-start-line="296" selection-start-column="9" selection-end-line="296" selection-end-column="9" />
           <folding>
             <element signature="e#63#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
+    <entry file="file://$PROJECT_DIR$/static/js/post/articles_by_category.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="345">
+          <caret line="111" column="75" selection-start-line="111" selection-start-column="63" selection-end-line="111" selection-end-column="75" />
+          <folding>
+            <marker date="1480081164000" expanded="true" signature="1586:1611" ph="..." />
+            <marker date="1480081164000" expanded="true" signature="1586:1624" ph="..." />
+            <marker date="1480081164000" expanded="true" signature="1586:1643" ph="..." />
+            <marker date="1480081164000" expanded="true" signature="1694:1719" ph="..." />
+            <marker date="1480081164000" expanded="true" signature="1694:1732" ph="..." />
+            <marker date="1480081164000" expanded="true" signature="1911:1923" ph="..." />
+            <marker date="1480081164000" expanded="true" signature="1911:1924" ph="..." />
+            <marker date="1480081164000" expanded="true" signature="1936:1966" ph="..." />
+            <marker date="1480081164000" expanded="true" signature="2040:2053" ph="..." />
+            <marker date="1480081164000" expanded="true" signature="2121:2135" ph="..." />
+            <marker date="1480081164000" expanded="true" signature="2121:2146" ph="..." />
+            <marker date="1480081164000" expanded="true" signature="2246:2260" ph="..." />
+            <marker date="1480081164000" expanded="true" signature="2246:2271" ph="..." />
+            <marker date="1480081164000" expanded="true" signature="2362:2374" ph="..." />
+            <marker date="1480081164000" expanded="true" signature="2403:2417" ph="..." />
+            <marker date="1480081164000" expanded="true" signature="2607:2664" ph="..." />
+            <marker date="1480081164000" expanded="true" signature="2715:2753" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/post/articles_by_tags.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+          <folding>
+            <marker date="1480081309000" expanded="true" signature="1567:1624" ph="..." />
+            <marker date="1480081309000" expanded="true" signature="1675:1713" ph="..." />
+            <marker date="1480081309000" expanded="true" signature="1892:1905" ph="..." />
+            <marker date="1480081309000" expanded="true" signature="1917:1947" ph="..." />
+            <marker date="1480081309000" expanded="true" signature="2021:2034" ph="..." />
+            <marker date="1480081309000" expanded="true" signature="2102:2116" ph="..." />
+            <marker date="1480081309000" expanded="true" signature="2227:2241" ph="..." />
+            <marker date="1480081309000" expanded="true" signature="2343:2355" ph="..." />
+            <marker date="1480081309000" expanded="true" signature="2384:2398" ph="..." />
+            <marker date="1480081309000" expanded="true" signature="2588:2645" ph="..." />
+            <marker date="1480081309000" expanded="true" signature="2696:2734" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
