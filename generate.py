@@ -25,13 +25,13 @@ from manage import app
 STATIC_ROOT = "/static/"
 
 # Markdown文件读取目录
-INPUT_CONTENT = "./in/"
+INPUT_CONTENT = os.path.abspath('.')+"/in/"
 
 # 索引文件
-INDEX_DAT = "./static/out/index.dat"
+INDEX_DAT = os.path.abspath('.')+"/static/out/index.dat"
 
 # html生成输出目录
-OUTPUT_CONTENT = "./static/out/"
+OUTPUT_CONTENT = os.path.abspath('.')+"/static/out/"
 
 #     loader=ChoiceLoader([
 #         FileSystemLoader('templates'),
