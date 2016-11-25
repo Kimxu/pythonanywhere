@@ -53,8 +53,8 @@ _MD_FILES = []
 _current_file_index = None
 _pinyin_names = set()
 
-TAG_HTML_TEMPLATE = u" <a href='/tags/{tag}/' class='tag-index'>{tag}</a> "
-AUTHOR_HTML_TEMPLATE = u"<a href='/about/' class='tag-index'>  {author}</a>"
+TAG_HTML_TEMPLATE = u" <a href='/tags/{tag}/' class='tag-index'>{tag}&nbsp</a> "
+AUTHOR_HTML_TEMPLATE = u"<a href='/about/' class='tag-index'> {author} </a>"
 TITLE_HTML_TEMPLATE = u"<div class='sidebar-module-inset'><h3 class='sidebar-title fa fa-angle-down' style='color:#dddddd;font-size: 16px'>    标题</h3><p>{title_str}</p></div>"
 
 env = Environment(

@@ -17,7 +17,8 @@
 
         </div>
         {% endraw %}
-        <ul class="pager" ng-show="hasPager" style="padding-bottom: 50px;padding-left: 15px; padding-right: 15px; ">
+        <ul class="pager hidePagers" ng-class="{showPagers:hasPager,hidePagers: !hasPager}"
+            style="padding-bottom: 50px;padding-left: 15px; padding-right: 15px; ">
             <li class="previous" ng-if="!noPre" ng-click="previousPager()"><a href="#">&larr; 前一页</a></li>
             <li class="next"><a href="#" ng-click="nextPager()">后一页 &rarr;</a></li>
         </ul>

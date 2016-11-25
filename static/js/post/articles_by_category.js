@@ -63,7 +63,7 @@ angular.module('App', [])
             "<span>该栏目目前没有文章~</span>" +
             "</div>" +
             "</div>";
-        var TAG_TEMPLATE = "<a href='/tags/{tag}/' class='tag-index'>{tag}</a>";
+        var TAG_TEMPLATE = "<a href='/tags/{tag}/' class='tag-index'>{tag}&nbsp</a>";
         var AUTHOR_TEMPLATE = "<a href='/about/user' class='author-index'>{author}</a>";
 
         function renderTags(tags) {
