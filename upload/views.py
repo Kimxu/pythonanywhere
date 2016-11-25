@@ -31,6 +31,7 @@ def upload():
         f = request.files["file_data"]
         f_name = secure_filename(f.filename)
         print(os.path.join(INPUT_CONTENT, f_name))
+        print(os.path.abspath('.'))
         f.save(os.path.join(INPUT_CONTENT, f_name))
         generate()
         IndexData.reload_index_data()
