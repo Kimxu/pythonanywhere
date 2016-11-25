@@ -30,10 +30,10 @@ def upload():
     try:
         f = request.files["file_data"]
         f_name = secure_filename(f.filename)
-        print('1'+os.path.join(INPUT_CONTENT, f_name))
-        print('2'+os.path.abspath('.'))
+        print('1'+os.path.abspath('.'))
+        print('2'+INPUT_CONTENT+f_name)
         print('3'+os.path.abspath(__file__))
-        f.save(os.path.join(INPUT_CONTENT, f_name))
+        f.save(INPUT_CONTENT+f_name)
         generate()
         IndexData.reload_index_data()
     except Exception as error:
