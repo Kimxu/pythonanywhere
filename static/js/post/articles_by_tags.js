@@ -94,6 +94,7 @@ angular.module('App', [])
             var sortedData = [];
             for (var i = ls.length - 1; i >= 0; i--) {
                 var key = ls[i].split(separator)[1];
+                data[key]["url_title"]=key;
                 sortedData.push(data[key]);
             }
             return sortedData;
@@ -108,7 +109,7 @@ angular.module('App', [])
 
                 if (data[key]["title"].length > 0) {
 
-                    articleHtml += ARTICLE_ITEM_TEMPLATE.replace(/\{articleId}/g, key)
+                    articleHtml += ARTICLE_ITEM_TEMPLATE.replace(/\{articleId}/g, data[key]["url_title"])
                         .replace(/\{title}/g, data[key]["title"])
                         .replace(/\{modify_time}/g, data[key]["publish_date"])
                         .replace(/\{author}/g, renderAuthors(data[key]["authors"]))

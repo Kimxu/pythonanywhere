@@ -246,6 +246,7 @@ def render(md_file, site_id):
         md = Markdown(
             extensions=[
                 "fenced_code",
+                "attr_list",
                 "codehilite(css_class=highlight,linenums=None)",
                 "meta",
                 "admonition",
