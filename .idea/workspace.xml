@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5f9c1c82-3d01-48ad-b0c6-d44ece27a754" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/post/articles_by_category.js" afterPath="$PROJECT_DIR$/static/js/post/articles_by_category.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/post/articles_by_tags.js" afterPath="$PROJECT_DIR$/static/js/post/articles_by_tags.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/posts/articles_by_tags.html" afterPath="$PROJECT_DIR$/templates/posts/articles_by_tags.html" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,19 +40,21 @@
       <file leaf-file-name="articles_by_category.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/posts/articles_by_category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="373">
+              <caret line="19" column="90" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="90" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articles_by_tags.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="articles_by_tags.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/posts/articles_by_tags.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-87">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="153">
+              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+              <folding>
+                <element signature="e#616#686#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articles_by_tags.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="articles_by_tags.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/post/articles_by_tags.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+            <state relative-caret-position="20">
+              <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
               <folding>
                 <marker date="1480081309000" expanded="true" signature="1567:1624" ph="..." />
                 <marker date="1480081309000" expanded="true" signature="1675:1713" ph="..." />
@@ -130,6 +131,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="articles_by_category.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/articles_by_category.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -152,7 +163,6 @@
         <option value="$PROJECT_DIR$/static/js/base.js" />
         <option value="$PROJECT_DIR$/utils/helper.py" />
         <option value="$PROJECT_DIR$/templates/tags.html" />
-        <option value="$PROJECT_DIR$/templates/posts/articles_by_tags.html" />
         <option value="$PROJECT_DIR$/static/js/tags.js" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/runtime.txt" />
@@ -200,6 +210,7 @@
         <option value="$PROJECT_DIR$/static/out/5.html" />
         <option value="$PROJECT_DIR$/static/js/post/articles_by_category.js" />
         <option value="$PROJECT_DIR$/static/js/post/articles_by_tags.js" />
+        <option value="$PROJECT_DIR$/templates/posts/articles_by_tags.html" />
       </list>
     </option>
   </component>
@@ -319,10 +330,6 @@
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="out" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -375,6 +382,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1015,14 +1026,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/articles_by_category.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/in/4.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
@@ -1065,22 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/posts/articles_by_tags.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/posts/articles_by_category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1131,8 +1118,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/post/articles_by_tags.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+        <state relative-caret-position="20">
+          <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
           <folding>
             <marker date="1480081309000" expanded="true" signature="1567:1624" ph="..." />
             <marker date="1480081309000" expanded="true" signature="1675:1713" ph="..." />
@@ -1145,6 +1132,32 @@
             <marker date="1480081309000" expanded="true" signature="2384:2398" ph="..." />
             <marker date="1480081309000" expanded="true" signature="2588:2645" ph="..." />
             <marker date="1480081309000" expanded="true" signature="2696:2734" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/posts/articles_by_category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="19" column="90" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/articles_by_category.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/posts/articles_by_tags.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="e#616#686#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
