@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html
+    
+    ng-app="App"
+>
+  <head>
+    
+    
+    
+    <title>Kimxu's blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="shortcut icon" href="/static/imgs/favorite.png" type="image/x-icon">
+    <link rel="icon" href="/static/imgs/favorite.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/static/css/post_base.css"
+          xmlns:width="http://www.w3.org/1999/xhtml" xmlns:width="http://www.w3.org/1999/xhtml">
+
+    <link rel="stylesheet" type="text/css" href="/static/css/article_base.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/pygments.css">
+
+  </head>
+  <body
+    
+    data-spy="scroll"
+    data-target=".scrollspy"
+>
+    
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-bottom" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">主页</a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <p id="formServerCategory" style="display: none"></p>
+                <ul class="nav navbar-nav" id="navbar">
+                    <li><a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></li>
+                    <li><a href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></li>
+                    <li><a href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a></li>
+                    <li><a href="/tags">标签云</a></li>
+                    <li><a href="/about/">关于</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="row post-content" style="height: 100%">
+        <div class="col-md-3 hidden-print hidden-xs hidden-sm" id="col-slide"
+             style="background-color: #2b2b2b;height: 100%;">
+            <img src="/static/imgs/avatar.jpeg"
+                 class="img-responsive img-circle center-block"
+                 style="margin-top: 60px"
+                 alt="Cinque Terre" width="150" height="150">
+            <div class="sidebar-module" style="color: #ffffff;padding-left: 10px">
+                <div>
+                    <div class='sidebar-module-inset'><h3 class='sidebar-title fa fa-angle-down' style='color:#dddddd;font-size: 16px'>    标题</h3><p>日常问题解决</p></div>
+                    <div class="sidebar-module-inset">
+                        <h5 class="sidebar-title fa fa-angle-down" style="color: #dddddd;font-size: 16px"> 摘要</h5>
+
+                        <p>Android开发中遇见到的一些问题，不定期更新</p>
+                    </div>
+                    <hr class="side-hr">
+                    <div>
+                        <h5 class="sidebar-title fa fa-user-o" style="color: #dddddd;font-size: 16px">
+                            作者</h5><a href='/about/' class='tag-index'> Kimxu </a>
+                    </div>
+                    <hr class="side-hr">
+                    <div>
+                        <h5 class="sidebar-title fa fa-tags" style="color: #dddddd;font-size: 16px"> 标签</h5> <a href='/tags/Android/' class='tag-index'>Android&nbsp</a> 
+                    </div>
+                    <hr class="side-hr">
+                </div>
+                <div data-spy="affix" id="directory">
+                    <h5>目录</h5>
+                    <div class="toc scrollspy">
+                        <div class="toc">
+<ul>
+<li><a href="#1-dialog">1. 设置Dialog的位置</a></li>
+<li><a href="#2-startactivityforresult-onactivityresult">2. startActivityForResult() 后直接调用 onActivityResult()</a></li>
+<li><a href="#3">3. 获得状态栏高度</a></li>
+</ul>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9" style="background-color: #dddddd"
+             style="padding-bottom: 60px;margin-left: 5px;margin-right: 5px">
+            <blockquote>
+<p>开发中遇见的一些问题，都会集中在这个帖子中。</p>
+</blockquote>
+<h1 id="1-dialog">1. 设置Dialog的位置</h1>
+<div class="highlight"><pre><span></span>  <span class="n">YYHLoginDialog</span> <span class="n">mLoginDialog</span> <span class="o">=</span> <span class="k">new</span> <span class="n">YYHLoginDialog</span><span class="o">(</span><span class="n">mActivity</span><span class="o">);</span>
+  <span class="n">Window</span> <span class="n">dialogWindow</span> <span class="o">=</span> <span class="n">mLoginDialog</span><span class="o">.</span><span class="na">getWindow</span><span class="o">();</span>
+  <span class="n">WindowManager</span><span class="o">.</span><span class="na">LayoutParams</span> <span class="n">lp</span> <span class="o">=</span> <span class="n">dialogWindow</span><span class="o">.</span><span class="na">getAttributes</span><span class="o">();</span>
+  <span class="c1">//背景无遮罩</span>
+  <span class="n">dialogWindow</span><span class="o">.</span><span class="na">clearFlags</span><span class="o">(</span><span class="n">WindowManager</span><span class="o">.</span><span class="na">LayoutParams</span><span class="o">.</span><span class="na">FLAG_DIM_BEHIND</span><span class="o">);</span>
+  <span class="n">dialogWindow</span><span class="o">.</span><span class="na">setGravity</span><span class="o">(</span><span class="n">Gravity</span><span class="o">.</span><span class="na">CENTER_HORIZONTAL</span> <span class="o">|</span> <span class="n">Gravity</span><span class="o">.</span><span class="na">TOP</span><span class="o">);</span>
+  <span class="n">lp</span><span class="o">.</span><span class="na">y</span> <span class="o">=</span> <span class="n">GlobalUtils</span><span class="o">.</span><span class="na">convertDipOrPx</span><span class="o">(</span><span class="n">mActivity</span><span class="o">,</span> <span class="mi">80</span><span class="o">);</span>
+  <span class="n">dialogWindow</span><span class="o">.</span><span class="na">setAttributes</span><span class="o">(</span><span class="n">lp</span><span class="o">);</span>
+</pre></div>
+
+
+<p>这么设置的没有问题，如果把：</p>
+<div class="highlight"><pre><span></span>  <span class="n">WindowManager</span><span class="o">.</span><span class="na">LayoutParams</span> <span class="n">lp</span> <span class="o">=</span> <span class="n">dialogWindow</span><span class="o">.</span><span class="na">getAttributes</span><span class="o">();</span>
+</pre></div>
+
+
+<p>替换成：</p>
+<div class="highlight"><pre><span></span>  <span class="n">WindowManager</span><span class="o">.</span><span class="na">LayoutParams</span> <span class="n">lp</span> <span class="o">=</span> <span class="k">new</span> <span class="n">WindowManager</span><span class="o">.</span><span class="na">LayoutParams</span><span class="o">();</span>
+</pre></div>
+
+
+<p>就会出现背景是黑色的问题。</p>
+<h1 id="2-startactivityforresult-onactivityresult">2. startActivityForResult() 后直接调用 onActivityResult()</h1>
+<p>这个问题是在开发中偶然遇见的问题。调用startActivityForResult()方法后，直接就调用了onActivityResult()。后来找到了原因，是因为启动的目标Activity设置了加载模式（launchMode）。启动的Activity<em>只能使用标准模式</em>。</p>
+<h1 id="3">3. 获得状态栏高度</h1>
+<div class="highlight"><pre><span></span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">getStatusBar</span><span class="o">(</span><span class="n">Context</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+          <span class="n">Class</span><span class="o">&lt;?&gt;</span> <span class="n">c</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+          <span class="n">Object</span> <span class="n">obj</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+          <span class="n">Field</span> <span class="n">field</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+          <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="o">,</span> <span class="n">sbar</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+          <span class="k">try</span> <span class="o">{</span>
+              <span class="n">c</span> <span class="o">=</span> <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="s">&quot;com.android.internal.R$dimen&quot;</span><span class="o">);</span>
+              <span class="n">obj</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="na">newInstance</span><span class="o">();</span>
+              <span class="n">field</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="na">getField</span><span class="o">(</span><span class="s">&quot;status_bar_height&quot;</span><span class="o">);</span>
+              <span class="n">x</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">field</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">obj</span><span class="o">).</span><span class="na">toString</span><span class="o">());</span>
+              <span class="n">sbar</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="na">getResources</span><span class="o">().</span><span class="na">getDimensionPixelSize</span><span class="o">(</span><span class="n">x</span><span class="o">);</span>
+              <span class="k">return</span> <span class="n">sbar</span><span class="o">;</span>
+          <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e1</span><span class="o">)</span> <span class="o">{</span>
+              <span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="s">&quot;Tag&quot;</span><span class="o">,</span> <span class="s">&quot;get status bar height fail&quot;</span><span class="o">);</span>
+              <span class="n">e1</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+              <span class="k">return</span> <span class="mi">0</span><span class="o">;</span>
+          <span class="o">}</span>
+      <span class="o">}</span>
+</pre></div>
+
+
+<p>​</p>
+            <!-- 多说评论框 start -->
+            <div class="ds-thread" data-thread-key="daily_solution" data-title="日常问题解决"
+                 data-url="/posts/daily_solution" style="margin-bottom: 50px"></div>
+            <!-- 多说评论框 end -->
+            <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+            <script type="text/javascript">
+                var duoshuoQuery = {short_name: "kimxuherokuapp"};
+                (function () {
+                    var ds = document.createElement('script');
+                    ds.type = 'text/javascript';
+                    ds.async = true;
+                    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                    ds.charset = 'UTF-8';
+                    (document.getElementsByTagName('head')[0]
+                    || document.getElementsByTagName('body')[0]).appendChild(ds);
+                })();
+
+            </script>
+            <!-- 多说公共JS代码 end -->
+        </div>
+    </div>
+
+
+    
+    
+    
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="/static/angular/angular.min.js"></script>
+    <script src="/static/js/base.js"></script>
+
+    <script src="/static/js/post/post_base.js"></script>
+
+    <script src="/static/js/post/article_base.js"></script>
+
+  </body>
+</html>

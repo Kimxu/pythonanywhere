@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html
+    
+    ng-app="App"
+>
+  <head>
+    
+    
+    
+    <title>Kimxu's blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="shortcut icon" href="/static/imgs/favorite.png" type="image/x-icon">
+    <link rel="icon" href="/static/imgs/favorite.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/static/css/post_base.css"
+          xmlns:width="http://www.w3.org/1999/xhtml" xmlns:width="http://www.w3.org/1999/xhtml">
+
+    <link rel="stylesheet" type="text/css" href="/static/css/article_base.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/pygments.css">
+
+  </head>
+  <body
+    
+    data-spy="scroll"
+    data-target=".scrollspy"
+>
+    
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-bottom" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">主页</a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <p id="formServerCategory" style="display: none"></p>
+                <ul class="nav navbar-nav" id="navbar">
+                    <li><a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></li>
+                    <li><a href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></li>
+                    <li><a href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a></li>
+                    <li><a href="/tags">标签云</a></li>
+                    <li><a href="/about/">关于</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="row post-content" style="height: 100%">
+        <div class="col-md-3 hidden-print hidden-xs hidden-sm" id="col-slide"
+             style="background-color: #2b2b2b;height: 100%;">
+            <img src="/static/imgs/avatar.jpeg"
+                 class="img-responsive img-circle center-block"
+                 style="margin-top: 60px"
+                 alt="Cinque Terre" width="150" height="150">
+            <div class="sidebar-module" style="color: #ffffff;padding-left: 10px">
+                <div>
+                    <div class='sidebar-module-inset'><h3 class='sidebar-title fa fa-angle-down' style='color:#dddddd;font-size: 16px'>    标题</h3><p>Https的使用（一）</p></div>
+                    <div class="sidebar-module-inset">
+                        <h5 class="sidebar-title fa fa-angle-down" style="color: #dddddd;font-size: 16px"> 摘要</h5>
+
+                        <p>Android中使用Https</p>
+                    </div>
+                    <hr class="side-hr">
+                    <div>
+                        <h5 class="sidebar-title fa fa-user-o" style="color: #dddddd;font-size: 16px">
+                            作者</h5><a href='/about/' class='tag-index'> Kimxu </a>
+                    </div>
+                    <hr class="side-hr">
+                    <div>
+                        <h5 class="sidebar-title fa fa-tags" style="color: #dddddd;font-size: 16px"> 标签</h5> <a href='/tags/Android/' class='tag-index'>Android&nbsp</a>  <a href='/tags/Https/' class='tag-index'>Https&nbsp</a> 
+                    </div>
+                    <hr class="side-hr">
+                </div>
+                <div data-spy="affix" id="directory">
+                    <h5>目录</h5>
+                    <div class="toc scrollspy">
+                        <div class="toc">
+<ul>
+<li><a href="#_1">概述</a></li>
+<li><a href="#https">Https 简介</a></li>
+<li><a href="#androidhttps">Android中使用Https</a></li>
+</ul>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9" style="background-color: #dddddd"
+             style="padding-bottom: 60px;margin-left: 5px;margin-right: 5px">
+            <h1 id="_1">概述</h1>
+<div class="highlight"><pre><span></span>现在网络安全逐渐成为关注的焦点，尤其是现在移动终端是日渐普及...
+说句题外话，这是本博客的第一篇文章，自己原来有两个博客，第一个是Workpress搭建的，第二
+个是Github上使用Hexo主题搭建的静态博客。这是我的第三个博客，前两个博客是自己的好朋友
+Xuri大神帮忙搭建的，但是当时自己比较浮躁，写了几篇博客也没有坚持下去。现在这个博客是
+用Flask+Bootstrap+AngularJs搭建的。刚开始的时候一度想要放弃，还好最后坚持了下来。
+虽然中间遇到了很多坑，但也学到了很多东西，生命在于折腾。等下个月就把自己原来的域名重新
+申请回来。每周坚持写一篇精品文章，也算是给自己的努力一个交代。
+</pre></div>
+
+
+<p>正好工作中需要使用到Https，趁此机会自己也好好的补充了Https方面的知识。这是第一篇，网络
+上分析的文章一堆一堆的，我主要是把自己用到的技术和编码发出来。</p>
+<h1 id="https">Https 简介</h1>
+<p><img alt="" src="http://7xotfz.com1.z0.glb.clouddn.com/public/16-11-22/29594127.jpg" /></p>
+<p>区别就是多了ssl(tsl已经是很久之前的了，ssl和tsl的区别很小)层，这一层的主要原理就是：
+1.当浏览器要与服务器通讯的时候，先和服务器建立安全连接（这一层就是SSL）。</p>
+<p>2.浏览器给服务器发送消息（其中夹杂着浏览器的可以使用的加密算法），服务器根据浏览器可以
+使用加密算法和Hash算法，以证书的形式返回给浏览器(其中证书里面包含网站的host，和公钥以及证书的颁发机构)。</p>
+<p><code>非对称加密算法：公钥加密的内容一定要使用私钥才能够解密，同理私钥加密的内容一定要使用公钥才能够解密</code></p>
+<p>3.浏览器收到服务器返回的消息之后:</p>
+<div class="highlight"><pre><span></span>1.会先验证下证书是否合法（浏览器里面存放着一些可信任的颁发机构,如果服务器返回的证书
+是这些可信任的颁发机构颁发的证书，那么这个证书就是合法的，当然也可以自己添加证书放
+到浏览器中）。浏览器会随机产生一串序列号，使用服务器发来的公钥进行加密。
+
+2.然后使用使用服务器挑选的Hash算法，将刚才的消息使用刚才的序列号进行加密，生成相应的
+消息校验值，与刚才的消息一同发还给服务器。
+</pre></div>
+
+
+<p>5.服务器收到消息之后:</p>
+<div class="highlight"><pre><span></span>1.使用私钥解密浏览器中使用公钥加密的消息,得到客户端产生的随机序列号。
+
+2.使用该随机序列号，对该消息进行加密，验证的到的校验值是否与客户端发来的一致。
+如果一致则说明消息未被篡改，可以信任。
+
+3.最后，使用该随机序列号，加上之前浏览器选择的加密算法，加密一段握手消息，发还给浏览器。
+同时Hash值也带上。
+</pre></div>
+
+
+<p>6.浏览器收到消息之后：</p>
+<div class="highlight"><pre><span></span>1.计算HASH值是否与发回的消息一致。
+
+2.检查消息是否为握手消息。
+</pre></div>
+
+
+<p>握手结束后，浏览器和服务器端使用握手阶段产生的随机数以及挑选出来的算法进行对称加解密的传输。</p>
+<p><code>为什么不直接使用非对称加密，而要这么费事，是因为非对称加密耗费时间，对称加密的效率比非对称
+加密的效率高的多</code></p>
+<div class="highlight"><pre><span></span>    非对称加密算法：RSA, DSA/DSS
+    对称加密算法： AES, 3DES
+    HASH算法：MD5, SHA1, SHA256
+</pre></div>
+
+
+<h1 id="androidhttps">Android中使用Https</h1>
+<p>上述的原理中，很容易被中间人攻击（Mac上使用Charles，Windows上使用Finder。在浏览器中安装证书
+，就可以实现中间人拦截）。</p>
+<p>Android中使用Https有几种方式</p>
+<div class="highlight"><pre><span></span>1.使用证书，之后在App里面存放证书，每次进行Https通讯的时候进行证书比对。
+2.使用公钥链的Hash值，把证书中的公钥提取出来，存放到App中，每次连接进行hash值的比对。
+</pre></div>
+
+
+<p>时间比较紧，今天就先写这一点，等这周末把代码整理下放上来。</p>
+            <!-- 多说评论框 start -->
+            <div class="ds-thread" data-thread-key="use_http_1" data-title="Https的使用（一）"
+                 data-url="/posts/use_http_1" style="margin-bottom: 50px"></div>
+            <!-- 多说评论框 end -->
+            <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+            <script type="text/javascript">
+                var duoshuoQuery = {short_name: "kimxuherokuapp"};
+                (function () {
+                    var ds = document.createElement('script');
+                    ds.type = 'text/javascript';
+                    ds.async = true;
+                    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                    ds.charset = 'UTF-8';
+                    (document.getElementsByTagName('head')[0]
+                    || document.getElementsByTagName('body')[0]).appendChild(ds);
+                })();
+
+            </script>
+            <!-- 多说公共JS代码 end -->
+        </div>
+    </div>
+
+
+    
+    
+    
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="/static/angular/angular.min.js"></script>
+    <script src="/static/js/base.js"></script>
+
+    <script src="/static/js/post/post_base.js"></script>
+
+    <script src="/static/js/post/article_base.js"></script>
+
+  </body>
+</html>

@@ -18,6 +18,22 @@ def upload_article():
     return render_template('upload/upload.html')
 
 
+@upload.route('/updateIndex/')
+@login_required
+def update_index():
+    from generate import generate
+    """
+    更新文章索引
+      """
+    try:
+        generate()
+        IndexData.reload_index_data()
+    except Exception as error:
+        print(error)
+        return jsonify({'status': 'update error'})
+    return jsonify({'status': 'update success'})
+
+
 @upload.route('/file', methods=["POST"])
 @login_required
 def upload():
@@ -30,10 +46,10 @@ def upload():
     try:
         f = request.files["file_data"]
         f_name = secure_filename(f.filename)
-        print('1'+os.path.abspath('.'))
-        print('2'+INPUT_CONTENT+f_name)
-        print('3'+os.path.abspath(__file__))
-        f.save(INPUT_CONTENT+f_name)
+        print('1' + os.path.abspath('.'))
+        print('2' + INPUT_CONTENT + f_name)
+        print('3' + os.path.abspath(__file__))
+        f.save(INPUT_CONTENT + f_name)
         generate()
         IndexData.reload_index_data()
     except Exception as error:
@@ -41,25 +57,3 @@ def upload():
         return jsonify({'status': '上传失败'})
 
     return jsonify({'status': '上传成功'})
-
-
-@upload.route('/update')
-@login_required
-def upload():
-    from generate import generate
-    """
-    更新文章索引
-      """
-    try:
-        generate()
-        IndexData.reload_index_data()
-    except Exception as error:
-        print(error)
-        return jsonify({'status': '更新失败'})
-
-    return jsonify({'status': '更新成功'})
-
-
-
-
-
