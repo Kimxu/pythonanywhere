@@ -322,10 +322,9 @@ def generate():
     load_md_files(INPUT_CONTENT)
     scan_md()
     dump_index()
+    from utils.helper import IndexData
+    IndexData.reload_index_data()
     pass
-
-
-
 
 if __name__ == "__main__":
     generate()

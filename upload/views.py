@@ -8,7 +8,6 @@ from flask import url_for
 from flask.ext.login import login_required
 from werkzeug.utils import secure_filename
 
-from utils.helper import IndexData
 from . import upload
 
 
@@ -16,22 +15,6 @@ from . import upload
 @login_required
 def upload_article():
     return render_template('upload/upload.html')
-
-
-@upload.route('/updateIndex/')
-@login_required
-def update_index():
-    from generate import generate
-    """
-    更新文章索引
-      """
-    try:
-        generate()
-        IndexData.reload_index_data()
-    except Exception as error:
-        print(error)
-        return jsonify({'status': 'update error'})
-    return jsonify({'status': 'update success'})
 
 
 @upload.route('/file', methods=["POST"])
@@ -51,7 +34,7 @@ def upload():
         print('3' + os.path.abspath(__file__))
         f.save(INPUT_CONTENT + f_name)
         generate()
-        IndexData.reload_index_data()
+
     except Exception as error:
         print(error)
         return jsonify({'status': '上传失败'})

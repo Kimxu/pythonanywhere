@@ -3,6 +3,7 @@ from flask import render_template
 from flask import request, jsonify
 from flask import url_for
 
+from generate import generate
 from utils.helper import IndexData
 from . import post
 
@@ -16,7 +17,12 @@ def page_articles():
 def get_all_article_index():
     """获取所有文章索引信息
     """
-    return jsonify(IndexData.get_index_data().get("article_index"))
+    try:
+        return jsonify(IndexData.get_index_data().get("article_index"))
+    except Exception as error:
+        print("出错了，重新加载..." + str(error))
+        generate()
+        return jsonify(IndexData.get_index_data().get("article_index"))
 
 
 @post.route("/inv_tag/")
@@ -34,8 +40,12 @@ def get_article_by_tag(tag):
         pager = int(request.args['pager'])
     except:
         pager = 0
-
-    aids = IndexData.get_index_data().get("tag_inverted_index").get(tag)
+    try:
+        aids = IndexData.get_index_data().get("tag_inverted_index").get(tag)
+    except Exception as error:
+        print("出错了，重新加载..." + str(error))
+        generate()
+        aids = IndexData.get_index_data().get("tag_inverted_index").get(tag)
     # 这里是预防传入的pager大于存在的篇幅数
     if aids is None:
         return jsonify(noDatas=True)
@@ -61,8 +71,12 @@ def get_article_by_category(category):
         pager = int(request.args['pager'])
     except:
         pager = 0
-
-    aids = IndexData.get_index_data().get("category_index").get(category)
+    try:
+        aids = IndexData.get_index_data().get("category_index").get(category)
+    except Exception as error:
+        print("出错了，重新加载..."+str(error))
+        generate()
+        aids = IndexData.get_index_data().get("category_index").get(category)
     # 这里是预防传入的pager大于存在的篇幅数
     if aids is None:
         return jsonify(noDatas=True)
