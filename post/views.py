@@ -1,12 +1,12 @@
 # -*- coding:utf-8 -*-
 from flask import render_template
 from flask import request, jsonify
-from flask import url_for
 
 from generate import generate
 from utils.helper import IndexData
 from . import post
-
+# 把项目放到heroku之后，总会一段之后 out文件夹就不见了,暂不知道为什么，
+# 这里的做法就是捕获异常，如果不见了，就重新生成一遍
 
 @post.route('/')
 def page_articles():
