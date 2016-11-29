@@ -39,8 +39,9 @@ def deploy():
     # migrate database to latest revision
     upgrade()
 
+
 @manager.command
-def updateIndex():
+def update_index():
     from generate import generate
     generate()
 

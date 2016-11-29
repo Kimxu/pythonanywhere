@@ -35,6 +35,8 @@ tags: 关于
 ```
 
 After the upload,the system will change the md file to Html file,that can auto sort out.
+you can sync the article(/in/ file),you can run the `python manage.py update_index`
+
 
 
 #Preview
