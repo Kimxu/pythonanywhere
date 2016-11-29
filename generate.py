@@ -15,7 +15,6 @@ from jinja2 import FileSystemLoader
 from jinja2 import PackageLoader
 from markdown import Markdown
 import pypinyin
-from manage import app
 
 # 静态文件路径，默认为`/static/`
 # 表示使用flask发布网站时的`http://ip:port/static/`目录

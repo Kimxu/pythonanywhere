@@ -2,3 +2,4 @@
 local.py
 /in
 /static/out
+.DS_Store
