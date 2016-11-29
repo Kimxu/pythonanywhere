@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html
-
         ng-app="App"
 >
 <head>
@@ -16,7 +15,8 @@
     <link rel="icon" href="/static/imgs/favorite.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/static/css/base.css">
     <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-social.css">
-    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css') }}">
 
 
     <link rel="stylesheet" type="text/css" href="/static/css/post_base.css"
@@ -145,9 +145,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <script src="/static/angular/angular.min.js"></script>
 <script src="/static/js/base.js"></script>
-
 <script src="/static/js/post/post_base.js"></script>
-
 <script src="/static/js/post/article_base.js"></script>
 
 </body>

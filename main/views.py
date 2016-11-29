@@ -12,7 +12,7 @@ def index():
     return render_template('index.html')
 
 
-@main.route('/tags')
+@main.route('/tags/')
 def tags():
     return render_template('tags.html')
 

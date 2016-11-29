@@ -1,12 +1,12 @@
 title: 日常问题解决
-summary: Android开发中遇见到的一些问题，不定期更新
+summary: 介绍本博客的基本功能
 authors: Kimxu
 publish_date: 2016-01-05
 categories: 技术
 tags: Android
 
 
->开发中遇见的一些问题，都会集中在这个帖子中。
+`前言：开发中遇见的一些问题，都会集中在这个帖子中。`
 
 #1. 设置Dialog的位置
      

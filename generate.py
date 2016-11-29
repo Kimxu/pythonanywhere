@@ -18,8 +18,7 @@ import pypinyin
 from manage import app
 
 # 静态文件路径，默认为`/static/`
-# 表示使用flask发布网
-# 站时的`http://ip:port/static/`目录
+# 表示使用flask发布网站时的`http://ip:port/static/`目录
 # 也可指定为固定地址的静态文件url，例如："http://192.168.62.47:5000/static/"
 # 注意，使用其他域名的静态文件时有可能引起跨域问题
 STATIC_ROOT = "/static/"
@@ -57,13 +56,22 @@ TAG_HTML_TEMPLATE = u" <a href='/tags/{tag}/' class='tag-index'>{tag}&nbsp</a> "
 AUTHOR_HTML_TEMPLATE = u"<a href='/about/' class='tag-index'> {author} </a>"
 TITLE_HTML_TEMPLATE = u"<div class='sidebar-module-inset'><h3 class='sidebar-title fa fa-angle-down' style='color:#dddddd;font-size: 16px'>    标题</h3><p>{title_str}</p></div>"
 
+
+# 原来的方式是使用 flask_bootstrap模板，所以需要PackageLoader，
+# 现在已经把bootstrap移动到自己的templates目录中
+# loader=ChoiceLoader([
+#         PackageLoader('flask_bootstrap', 'templates'),
+#         FileSystemLoader("templates")])
+
 env = Environment(
-    loader=ChoiceLoader([
-        PackageLoader('flask_bootstrap', 'templates'),
-        FileSystemLoader("templates")])
+    loader=FileSystemLoader("templates")
 )
-env.globals['bootstrap_find_resource'] = app.jinja_env.globals['bootstrap_find_resource']
-env.globals['url_for'] = app.jinja_env.globals['url_for']
+
+# env.globals['bootstrap_find_resource'] = app.jinja_env.globals['bootstrap_find_resource']
+# 因为不想引入app  所以 使用到的模板不中不能使用url_for，
+# 如果一定要使用url_for，可以重新写一份模板引用
+# 也可以引入app
+# env.globals['url_for'] = app.jinja_env.globals['url_for']
 
 
 def _reload_global():
@@ -199,7 +207,6 @@ def save_html(out_path, html):
     base_folder = os.path.dirname(out_path)
     if not os.path.exists(base_folder):
         os.makedirs(base_folder)
-
     with codecs.open(out_path, "w+", "utf-8") as f:
         f.write(html)
 
@@ -313,11 +320,12 @@ def load_md_files(folder):
 def generate():
     _reload_global()
     clean()
-
     load_md_files(INPUT_CONTENT)
     scan_md()
     dump_index()
     pass
+
+
 
 
 if __name__ == "__main__":

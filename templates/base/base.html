@@ -5,11 +5,11 @@
 {% block head %}
     {{ super() }}
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <link rel="shortcut icon" href="{{ url_for('static', filename='imgs/favorite.png') }}" type="image/x-icon">
-    <link rel="icon" href="{{ url_for('static', filename='imgs/favorite.png') }}" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/base.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap-social.css') }}">
-    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/static/imgs/favorite.png" type="image/x-icon">
+    <link rel="icon" href="/static/imgs/favorite.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="/static/font-awesome/css/font-awesome.min.css">
 
 {% endblock %}
 
@@ -29,11 +29,11 @@
             <div class="collapse navbar-collapse" id="example-navbar-collapse">
                 <p id="formServerCategory" style="display: none">{{ category }}</p>
                 <ul class="nav navbar-nav" id="navbar">
-                    <li><a href="{{ url_for('main.page_article_by_category',category='技术') }}">技术</a></li>
-                    <li><a href="{{ url_for('main.page_article_by_category',category='生活') }}">生活</a></li>
-                    <li><a href="{{ url_for('main.page_article_by_category',category='杂谈') }}">杂谈</a></li>
-                    <li><a href="{{ url_for('main.tags') }}">标签云</a></li>
-                    <li><a href="{{ url_for('main.about')}}">关于</a></li>
+                    <li><a href="/categories/技术">技术</a></li>
+                    <li><a href="/categories/生活">生活</a></li>
+                    <li><a href="/categories/杂谈">杂谈</a></li>
+                    <li><a href="/tags">标签云</a></li>
+                    <li><a href="/about/">关于</a></li>
                     {#                    <li class="dropdown">#}
                     {#                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">#}
                     {#                            杂谈 <b class="caret"></b>#}
@@ -52,7 +52,7 @@
                 {% if current_user!=undefined %}
                     {% if current_user.is_authenticated %}
                         <a class="navbar-text navbar-right" style="margin-right: 10px"
-                           href="{{ url_for('uploads.upload_article') }}">上传MD</a>
+                           href="/uploads">上传MD</a>
                     {% endif %}
                 {% endif %}
             </div>
@@ -66,8 +66,8 @@
 
 {% block scripts %}
     {{ super() }}
-    <script src="{{ url_for('static', filename='angular/angular.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/base.js') }}"></script>
+    <script src="/static/angular/angular.min.js"></script>
+    <script src="/static/js/base.js"></script>
 {% endblock %}
 
 {% block html_attribs %}

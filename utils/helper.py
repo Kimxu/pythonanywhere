@@ -4,7 +4,6 @@
 """Documentation"""
 import shelve
 
-from config import INDEX_DAT
 
 
 class IndexData(object):
@@ -36,6 +35,7 @@ class IndexData(object):
         """
         cls._load_data()
 
+from generate import INDEX_DAT
 
 if __name__ == "__main__":
     pass

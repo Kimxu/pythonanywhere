@@ -2,15 +2,14 @@
 
 {% block head %}
     {{ super() }}
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/post_base.css') }}"
-          xmlns:width="http://www.w3.org/1999/xhtml" xmlns:width="http://www.w3.org/1999/xhtml">
+    <link rel="stylesheet" type="text/css" href="/static/css/post_base.css">
 {% endblock %}
 
 {% block content %}
     <div class="row post-content  center-block" style="height: 100%">
         <div class="col-md-3 hidden-print hidden-xs hidden-sm" id="col-slide"
              style="background-color: #2b2b2b;height: 100%;">
-            <img src="{{ url_for('static', filename='imgs/avatar.jpeg') }}"
+            <img src="/static/imgs/avatar.jpeg"
                  class="img-responsive img-circle center-block"
                  style="margin-top: 60px"
                  alt="Cinque Terre" width="150" height="150">
@@ -43,7 +42,7 @@
                             <a class="fa fa-wechat fa-2x"
                                data-toggle="tooltip"
                                title="<img  style='width: 120px; height: 120px;'
-                     src='{{ url_for('static', filename='imgs/weichat.jpeg') }}'/>"></a>
+                     src='static/imgs/weichat.jpeg'/>"></a>
                         </div>
                         <div class=" col-md-3" style="padding: 5px;">
                             <a class="fa fa-github fa-2x" href="https://github.com/Kimxu" target="_blank"></a>
@@ -65,5 +64,5 @@
 
 {% block scripts %}
     {{ super() }}
-    <script src="{{ url_for('static', filename='js/post/post_base.js') }}"></script>
+    <script src="/static/js/post/post_base.js"></script>
 {% endblock %}

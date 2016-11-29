@@ -1,12 +1,12 @@
 {% extends 'base/post_base.html' %}
 {% block head %}
     {{ super() }}
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/article_base.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/pygments.css') }}">
+    <link rel="stylesheet" type="text/css" href="/static/css/article_base.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/pygments.css">
 {% endblock %}
 {% block scripts %}
     {{ super() }}
-    <script src="{{ url_for('static', filename='js/post/article_base.js') }}"></script>
+    <script src="/static/js/post/article_base.js"></script>
 {% endblock %}
 {% block body_attribs %}
     {{ super() }}
@@ -17,7 +17,7 @@
     <div class="row post-content" style="height: 100%">
         <div class="col-md-3 hidden-print hidden-xs hidden-sm" id="col-slide"
              style="background-color: #2b2b2b;height: 100%;">
-            <img src="{{ url_for('static', filename='imgs/avatar.jpeg') }}"
+            <img src="/static/imgs/avatar.jpeg"
                  class="img-responsive img-circle center-block"
                  style="margin-top: 60px"
                  alt="Cinque Terre" width="150" height="150">

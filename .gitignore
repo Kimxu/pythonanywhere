@@ -1,2 +1,4 @@
 .gitignore
 local.py
+/in
+/static/out
